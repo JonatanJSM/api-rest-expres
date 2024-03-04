@@ -1,0 +1,24 @@
+{
+  "name": "api-rest-express",
+  "version": "1.0.0",
+  "description": "api-sicei",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "sicei"
+  ],
+  "author": "Jonatan Santana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.9.2",
+    "sequelize": "^6.37.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0" 
+  }
+}
