@@ -1,9 +1,21 @@
+import { getAllAlumnos, postAlumnosService } from '../services/alumnoService.js';
+
 export const getAlumnos = (req, res) => {
-    res.send('GET Alumnos');
+    const allAlumnos = getAllAlumnos();
+    res.status(200).send(allAlumnos);
 }
 
 export const postAlumnos = (req, res) => {
-    res.send('POST Alumnos');
+    const {body} = req;
+    if(!body.nombre || !body.matricula){
+        return;
+    }
+    const alumno = {
+        nombre: body.nombre,
+        matricula: body.matricula
+    }
+    const newAlumno = postAlumnosService(alumno);
+    res.status(201).send(newAlumno);
 }
 
 export const putAlumnos = (req, res) => {

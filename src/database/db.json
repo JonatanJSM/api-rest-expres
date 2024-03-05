@@ -1,0 +1,29 @@
+{
+    "alumnos": [
+        {
+          "nombre": "Juan Pérez",
+          "matricula": "2021001"
+        },
+        {
+          "nombre": "María García",
+          "matricula": "2021002"
+        },
+        {
+          "nombre": "Carlos López",
+          "matricula": "2021003"
+        },
+        {
+          "nombre": "Ana Martínez",
+          "matricula": "2021004"
+        },
+        {
+          "nombre": "Pedro Rodríguez",
+          "matricula": "2021005"
+        },
+        {
+          "nombre": "Laura Fernández",
+          "matricula": "2021006"
+        }
+      ]
+      
+}
