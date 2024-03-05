@@ -5,7 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "lint": "eslint .",
+    "test": "jest ./src/",
+    "prepare": "husky"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "type": "module"
   },
   "keywords": [
     "sicei"
@@ -22,6 +29,14 @@
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "@babel/core": "^7.24.0",
+    "@babel/plugin-syntax-import-attributes": "^7.23.3",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/register": "^7.23.7",
+    "eslint": "^8.57.0",
+    "husky": "^8.0.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
   }
 }
