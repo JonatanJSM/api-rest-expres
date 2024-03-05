@@ -21,6 +21,7 @@ export const postAlumnos = (req, res) => {
     }
     const newAlumno = postAlumnosService(alumno);
     res.status(201).send(newAlumno);
+
 }
 
 export const putAlumnos = (req, res) => {
@@ -32,6 +33,6 @@ export const putAlumnos = (req, res) => {
 export const deletAlumnos = (req, res) => {
 
     res.send('DELETE Alumnos');
-    
+
 }
 
