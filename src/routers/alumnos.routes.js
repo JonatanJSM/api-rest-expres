@@ -2,7 +2,7 @@ import { Router } from "express";
 import { getAlumnos, postAlumnos, putAlumnos, deletAlumnos } from "../controllers/alumnos.controller.js";
 
 const router = Router();   
-
+// https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api/
 // GET para obtener una lista de alumnos. El alumno tendra 2 propiedades, nombre y matricula.
 router.get('/alumnos', getAlumnos);
 
