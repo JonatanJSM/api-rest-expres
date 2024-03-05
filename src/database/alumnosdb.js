@@ -1,5 +1,9 @@
-import DB from './db.json' assert { type: "json" };
+import fs from 'fs';
 
 export const getAlumnos = () => {
-    return DB.alumnos;
+
+    const data = fs.readFileSync('./src/database/db.json', { encoding: 'utf-8' });
+    const allAlumnos = JSON.parse(data);
+    return allAlumnos;
+    
 }
