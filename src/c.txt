@@ -1,0 +1,16 @@
+sudo systemctl stop docker
+
+sudo systemctl --user stop docker
+
+
+sudo build -t myimage:1.0 .
+sudo docker buildx build -t apirest:1.0 .
+
+docker images
+
+docker run -d --name mi-contenedor -p 8080:3000 nombre-de-tu-imagen
+docker run -p 8080:3000 -d apirest:1.0  // es la buena
+
+http://localhost:8080/api-docs/
+
+docker stop 123abc456def
