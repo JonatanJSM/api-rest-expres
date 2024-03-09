@@ -26,7 +26,7 @@ module.exports = {
       "promise-function-async": "off",
       "strict-boolean-expressions": "off",
       "no-floating-promises": "off",
-      "padded-blocks": "warn"
+      "padded-blocks": "error"
     }
   };
   
